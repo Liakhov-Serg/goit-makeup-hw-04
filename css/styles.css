@@ -218,7 +218,9 @@ color: #000;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-
+.link-mail:nth-child(1)::after {
+    background-image: url(../images/telmin.svg);
+}
 .tel .link {
     color: rgba(117, 117, 117, 1);
    
@@ -355,10 +357,12 @@ color: #FFFFFF;
     display: block;
     content: "";
     height: 120px;
+    background: #F5F4FA;
     background-image: url(../images/attentionmin.svg);
     background-repeat: no-repeat;
     background-position: center;
-    outline: 5px solid salmon;
+        
+
     margin-bottom: 30px;
 }
 
@@ -469,6 +473,8 @@ color: rgba(117, 117, 117, 1);
 margin-bottom: 16px;
 
 }
+/**social**/
+
 .social__list {
     
     display: flex;
@@ -479,17 +485,41 @@ margin-bottom: 16px;
     padding-right: 32px;
     color: rgba(175, 177, 184, 1);
     padding-bottom: 30px;
+    gap: 10px;
 
 }
 .social__item {
     
-    display: flex;
+    
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
+    
 
 }
+.social__item:last-child {
+    margin-right: 0px;
+}
+.social__item:hover {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(33, 150, 243, 1);
+  
+}
 .social__link {
-    background-color: aquamarine;
+    background-color: yellow;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: rgba(33, 150, 243, 1);
+}
+.social__link:hover {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    
+color: rgba(33, 150, 243, 1)
 }
 .social__icon {
 
@@ -497,8 +527,15 @@ margin-bottom: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
+    fill: currentColor;
+
+    width: 20px;
+    height: 20px;
+    background-position: 50%;
 }
 /*--наші клієнти--*/
+
+
 .our__clients {
     font-family: Roboto;
 font-size: 36px;
@@ -520,19 +557,17 @@ margin-bottom: 30px;
     display: flex;
     justify-content: center;
     gap: 30px;
-    width: 170px;
+    
     height: 92px;
 }
 .client__cards {
-    width: 170;
-    height: 92;
-    outline: 4px solid salmon;
+    width: 170px;
+    height: 92px;
+    border: 1px solid rgba(175, 177, 184, 1);
     
 }
 .client__item {
-    width: 170;
-    height: 92;
-    outline: 4px solid salmon;
+    
 }
 
 /* footer */
@@ -652,7 +687,7 @@ color: rgba(255, 255, 255, 0.6);
 }
 .footer__link {
     background-color: yellow;
-    display: 
+    display: inline;
     justify-content: block;
 }
 
@@ -671,8 +706,7 @@ color: rgba(255, 255, 255, 0.6);
 /* button portfolio blue*/
 
 .button-portfolio {
-    height: 38px;
-    width: 125px;
+    min-height: 38px;
     padding: 6px 22px;
     
     border-radius: 4px;
@@ -707,8 +741,8 @@ color: rgba(255, 255, 255, 0.6);
 }
     /* button-portfolio-all */
     .button-portfolio-all {
-        height: 38px;
-        width: 73px;
+        min-height: 38px;
+        min-width: 73px;
         padding: 6px 25px;
         
         border-radius: 4px;
@@ -749,21 +783,21 @@ color: rgba(255, 255, 255, 0.6);
 ul.section__title {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+   gap: 30px;
 
     
     
     
     
 }
-.section__title:nth-child(3) {
+ul.section__title:nth-child(3) {
     margin-right: 0px;
 
 }
-.section__title__card:nth-child(3) {
-    margin-right: 0px;
+
+
     
-}
+
 
 .section__title__card {
     
@@ -772,7 +806,15 @@ ul.section__title {
     
 }
 
-  
+ .section__title__card__bord {
+    display: block;
+    outline: 1px solid #EEEEEE;
+    text-align: left;
+    padding-left: 24px;
+    padding-right: 24px;
+     
+    
+ } 
 
 
 .section__title__portfolio {
@@ -795,7 +837,7 @@ margin-top: 0px;
     line-height: 1.88;
     /* identical to box height, or 188% */
     
-    margin-top: 4px;
+    
     
     color: #757575;
 
