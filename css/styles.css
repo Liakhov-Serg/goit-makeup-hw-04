@@ -68,6 +68,7 @@ body {
 /* основний фон шапки #FFFFFF */
 .header {
     background-color: #FFFFFF;
+    border: 1px solid rgba(236, 236, 236, 1);
  
 }
 /* conteiner header */
@@ -228,6 +229,44 @@ color: #000;
    
 
 }
+
+.header__link__tel {
+    color: rgba(117, 117, 117, 1);
+    text-decoration: none;
+    
+
+}
+.header__link__mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 10px;
+    color: rgba(33, 150, 243, 1);
+    text-decoration: none;
+    
+}
+.header__link__tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 10px;
+}
+//////.tech__link{
+
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+
+    width: 20px;
+    height: 20px;
+    background-position: 50%;
+}
 .link {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -235,6 +274,8 @@ color: #000;
 .item .auth-nav {
     padding-top: 32px;
     padding-bottom: 32px;
+    display: flex;
+    justify-content: center;
 
 }
 .auth-nav .item + .item {
@@ -242,10 +283,7 @@ color: #000;
     padding-top: 0px;
     padding-bottom: 0px;
 }
-.role {
-    border-bottom-style: double;
-    border: 1px solid rgba(238, 238, 238, 1);
-}
+
 
 
 
@@ -266,6 +304,7 @@ color: #000;
     background-size: contain;
     padding-top: 200px;
     
+    
 
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -280,16 +319,12 @@ color: #000;
 
 .hero-wrapper {
     
+    
     text-align: center;
     max-width: 696px;
     margin: auto;
     
     
-    
-}
-.hero {
-    
-    text-align: center;
     
 }
 
@@ -309,13 +344,24 @@ color: #FFFFFF;
 
     
 }
+.hero-batton {
+    display: flex;
+    justify-content: center;
+    
+}
 
 .button__prime {
     /* size button */
     width: 216px;
     height: 50px;
+    border-radius: 4px;
 
-    display: inline-block;
+    /* color shadow batton*/
+    background: rgba(33, 150, 243, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    /* text button */
+    display: flex;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -323,10 +369,9 @@ color: #FFFFFF;
     text-align: center;
     
     border: transparent;
-    border-radius: 4px;
+    
     /* color button */
-    background: rgba(33, 150, 243, 1);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
     text-decoration: none;
     
 
@@ -353,6 +398,7 @@ color: #FFFFFF;
     width: 1170px;
     padding-left: 0px;
     padding-right: 0px;
+    margin-top: 94px;
     
  }
 .box-works-item::before {
@@ -432,7 +478,7 @@ text-align: center;
 
 .section-team {
     background-color: rgba(245, 244, 250, 1);
-    height: 708px;
+    
     margin-bottom: 94px;    
 }
 .cards {
@@ -593,7 +639,7 @@ margin-bottom: 30px;
 
 
   
-.section__footer {
+.footer {
     background-color: rgba(47, 48, 58, 1);
 }
 /*text footer*/
@@ -686,6 +732,9 @@ color: rgba(255, 255, 255, 0.6);
 }
 .place {
     
+}
+.place {
+    
     justify-content: baseline;
     
     padding-top: 60px;
@@ -693,7 +742,7 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .footer__link {
-    /background-color: yellow;
+    background-color: yellow;
     display: inline-flex;
     margin-bottom: 0px;
 }
@@ -704,12 +753,11 @@ color: rgba(255, 255, 255, 0.6);
     margin-top: 0px;
     padding-bottom: 00px;
     margin-left: 315px;
-    padding-top: 100px;
+    
 }
 .social__item__footer {
     display: flex;
-    margin-bottom: 100px;
-    padding-bottom: 100px;
+    justify-content: baseline;
     
 
 }
@@ -769,7 +817,7 @@ color: rgba(255, 255, 255, 0.6);
     /* button-portfolio-all */
     .button-portfolio-all {
         min-height: 38px;
-        min-width: 73px;
+        
         padding: 6px 25px;
         
         border-radius: 4px;
@@ -784,7 +832,8 @@ color: rgba(255, 255, 255, 0.6);
         
         cursor: pointer;
         Fill: Solid;
-        color: #FFFFFF;
+        background: rgba(245, 244, 250, 1);
+;
         }
         .button-portfolio-all:focus {
             background-color: var(--primery-fon-color);
