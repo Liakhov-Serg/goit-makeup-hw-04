@@ -758,7 +758,13 @@ margin-top: 9px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background: rgba(255, 255, 255, 0.1);
+
+}
+.social__icon {
+    color: rgb(26, 173, 195);
+
+
 }
     
 
