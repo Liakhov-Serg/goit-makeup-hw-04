@@ -13,7 +13,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video, 
+time, mark, audio, video 
 {
     margin: 0px;
 	margin: 0px;
@@ -287,6 +287,7 @@ color: #000;
     text-align: center;
     max-width: 696px;
     margin: auto;
+   
     
     
     
@@ -589,6 +590,9 @@ text-align: center;
   
 .footer {
     background-color: rgba(47, 48, 58, 1);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 }
 /*text footer*/
 .logo-footer .accent-footer:focus,
@@ -675,42 +679,72 @@ color: rgba(255, 255, 255, 0.6);
 .tel-footer:hover {
     color: rgba(33, 150, 243, 1);
 }
-.footer__link {
-    color: aquamarine;
-}
 
-.place {
-    
-    justify-content: baseline;
-    
-    padding-top: 60px;
-    
-}
-
-.footer__link {
-    background-color: yellow;
-    display: inline-flex;
-    margin-bottom: 0px;
-}
 .footer__join {
+    margin-left: 70px;
+}
+.footer__link {
     
     
-    background-color: rgb(10, 65, 114);
-    margin-top: 0px;
-    padding-bottom: 00px;
-    margin-left: 315px;
+}
+
+.footer__social {
+    margin: 0;
+
+}    
+  
     
+.footer__title {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+
+}
+.social__item {
+    display: flex;
+    gap: 10px;
+    
+    justify-content: center;
+    align-items: center;
+    fill: currentColor;
+    
+    width: 44px;
+    height: 44px;
+    background-position: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    ;
+    }
+.footer__social__item (
+    
+    
+)    
+
+
+    .social__item__footer:hover,
+    .social__item__footer:focus {
+    background-color: #f3212f;
+  
+}
+.social__item__footer:hover .social__icon {
+    fill: #ffffff;
 }
 .social__item__footer {
+    
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
     display: flex;
-    justify-content: baseline;
+    justify-content: center;
+    align-items: center;
+    
+}
     
 
-}
-.cont__footer {
+
+.conteiner-wrap {
     display: flex;
-    justify-content: baseline;
-    padding-top: 100px;
+   align-items: baseline ;
+    
+    
 }
 
 /* portfolio */
@@ -878,7 +912,7 @@ padding-bottom: 4px;
     
     margin-bottom: 0;
     margin-top: 0;
-    
+
     
     color: #757575;
 
