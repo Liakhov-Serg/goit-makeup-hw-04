@@ -22,6 +22,7 @@ time, mark, audio, video
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    image: d
 }
 
 html {
@@ -33,8 +34,13 @@ html {
     font: inherit;
     font-weight: normal;
     vertical-align: baseline;
+   
+        }      
+        
+ img {
+      display: block
+     }
 
-}
 *,
 *::before,
 *::after {
@@ -73,6 +79,10 @@ body {
 }
 .button {
     cursor: pointer;
+}
+.list-stale-image {
+    
+    display: block;
 }
 
 /* основний фон шапки */
@@ -649,7 +659,8 @@ letter-spacing: 0.03em;
 text-decoration: none;
 color: #FFFFFF;
 
-
+display: inline-block;
+margin-top: 20px;
 
 
 }
@@ -665,7 +676,8 @@ text-decoration: none;
 letter-spacing: 0.03em;
 
 color: rgba(255, 255, 255, 0.6);
-
+display: inline-block;
+margin-top: 9px;
 
 }
 
@@ -680,6 +692,9 @@ text-decoration: none;
 letter-spacing: 0.03em;
 
 color: rgba(255, 255, 255, 0.6);
+
+display: inline-block;
+margin-top: 9px;
 }
 .tel-footer:focus,
 .tel-footer:hover {
@@ -760,7 +775,7 @@ color: rgba(255, 255, 255, 0.6);
 .section__nav__button {
     padding-top: 94px;
     padding-bottom: 50px;
-    background-color: #f3212f;
+    
 }
 .button-box {
     display: flex;
@@ -884,6 +899,7 @@ ul.section__title:nth-child(3) {
 
 
 .section__title__card {
+    stayl
     
    
     
