@@ -576,6 +576,12 @@ margin-bottom: 50px;
     
     
 }
+
+
+
+
+
+
 .client__cards {
     display: flex;
     align-items: center;
@@ -583,8 +589,30 @@ margin-bottom: 50px;
 
     width: 170px;
     height: 92px;
-    border: 1px solid rgba(175, 177, 184, 1);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.client__cards:hover,
+.client__cards:focus {
+    border: 1px solid rgba(33, 150, 243, 1)
+}
+.client__label {
+    fill: rgba(175, 177, 184, 1);
     
+}
+.client__cards:hover .client__label,
+.client__cards:focus .client__label{
+    fill: rgba(33, 150, 243, 1)
+}
+.client__item {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    
+
+
 }
 
 
@@ -739,7 +767,7 @@ margin-top: 9px;
 }
     
     
-)    
+
 
 
     .social__item__footer:hover,
@@ -905,13 +933,7 @@ ul.section__title:nth-child(3) {
     
 
 
-.section__title__card {
-    stayl
-    
-   
-    
-    
-}
+
 
  .section__title__card__bord {
     display: block;
